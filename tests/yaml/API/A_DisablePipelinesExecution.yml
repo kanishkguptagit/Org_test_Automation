@@ -1,0 +1,8 @@
+pipelines:
+  - name: A_DisablePipelinesExecution
+    steps:
+      - name: DisablePipelinesExecutionStep
+        type: Bash
+        execution:
+          onExecute:
+            - printenv
